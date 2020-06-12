@@ -81,10 +81,11 @@ button {
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 40%;
+  height: 40%;
 }
 
 .close {
@@ -98,5 +99,36 @@ button {
 .close:focus {
   color: black;
   text-decoration: none;
+  cursor: pointer;
+}
+
+/* FORM CSS */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  display: block;
+  text-align: right;
+  margin-top: 35px;
+  width: 80%;
+  font-size: 2rem;
+}
+
+input {
+  width: 15rem;
+  height: 2rem;
+}
+
+form div button {
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  margin-right: 150px;
+}
+
+form div button:hover {
   cursor: pointer;
 }

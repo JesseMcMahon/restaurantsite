@@ -15,3 +15,11 @@ window.addEventListener("click", (e) => {
     modal.style.display = "none";
   }
 });
+
+document.addEventListener(
+  "DOMContentLoaded",
+  () => {
+    modal.style.display = "block";
+  },
+  false
+);
